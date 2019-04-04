@@ -20,7 +20,7 @@ body {
 }
 
 .header {
-	margin: 100px;
+	margin: 75px;
 }
 
 .Card {
@@ -88,6 +88,27 @@ a:hover:after {
 	color: #00D1CD;
 }
 
+#gForm {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	margin: 75px;
+}
+
+input[type=text] {
+	width: 350px;
+	border: none;
+	background: rgba(234, 234, 234, 0.66);
+	border-bottom: solid #f30067 2px;
+	outline: none;
+	font-size: 1em;
+	padding: 5px;
+}
+
+.CardsWrapper:last-child {
+	margin-bottom: 25px;
+}
+
 @media screen and (max-width: 1350px) {
 	.CardsWrapper {
 		grid-template-columns: auto auto auto;
@@ -113,21 +134,19 @@ a:hover:after {
 	.CardsWrapper {
 		grid-template-columns: auto;
 	}
-	.CardsWrapper:last-child {
-		margin-bottom: 25px;
-	}
 	a {
 		font-size: 0.85em;
 	}
 	#datetime {
 		font-size: 2em;
 	}
+	#gForm {
+		display: none;
+		visibility: hidden;
+	}
 }
 
 @media screen and (max-height: 850px) {
-	.CardsWrapper:last-child {
-		margin-bottom: 25px;
-	}
 	.header {
 		margin: 50px;
 	}
